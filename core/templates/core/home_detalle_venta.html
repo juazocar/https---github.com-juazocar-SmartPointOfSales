@@ -1,0 +1,12 @@
+<div class="row">
+    <h1>Listado de Detalle de Venta</h1>
+</div>
+
+<div class="row">
+    <table border="1">
+        <tr><td>Id</td><td>Producto</td><td>Venta</td></tr>
+        {% for det in detalle_venta %}
+        <tr><td>{{det.id_detalle_venta}}</td><td>{{det.producto}}</td><td>-{{det.venta}}</td></tr>
+        {% endfor %}
+    </table>
+</div>

@@ -1,0 +1,12 @@
+<div class="row">
+    <h1>Listado de Ventas</h1>
+</div>
+
+<div class="row">
+    <table border="1">
+        <tr><td>Id</td><td>Monto</td><td>Fecha</td><td>Cliente</td><td>Medio pago</td></tr>
+        {% for vta in ventas %}
+        <tr><td>{{vta.id_venta}}</td><td>{{vta.monto}}</td><td>{{vta.fecha}}</td><td>{{vta.cliente}}</td><td>{{vta.medio_pago}}</td></tr>
+        {% endfor %}
+    </table>
+</div>

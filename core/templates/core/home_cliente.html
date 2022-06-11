@@ -1,0 +1,12 @@
+<div class="row">
+    <h1>Listado de Clientes</h1>
+</div>
+
+<div class="row">
+    <table border="1">
+        <tr><td>Id</td><td>Nombre</td><td>Apellidos</td><td>Correo</td><td>Direccion</td></tr>
+        {% for cli in clientes %}
+        <tr><td>{{cli.idCliente}}</td><td>{{cli.nombre}}</td><td>{{cli.apellidos}}</td><td>{{cli.correo}}</td><td>{{cli.direccion}}</td></tr>
+        {% endfor %}
+    </table>
+</div>

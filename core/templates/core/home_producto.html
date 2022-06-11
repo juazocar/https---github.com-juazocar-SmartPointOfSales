@@ -1,0 +1,12 @@
+<div class="row">
+    <h1>Listado de Productos</h1>
+</div>
+
+<div class="row">
+    <table border="1">
+        <tr><td>Id</td><td>Nombre</td><td>Descripción</td><td>Precio</td></tr>
+        {% for prd in productos %}
+        <tr><td>{{prd.id_producto}}</td><td>{{prd.nombre}}</td><td>{{prd.descripcion}}</td><td>{{prd.precio}}</td></tr>
+        {% endfor %}
+    </table>
+</div>

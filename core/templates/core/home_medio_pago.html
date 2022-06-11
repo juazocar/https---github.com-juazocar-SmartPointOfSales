@@ -1,0 +1,12 @@
+<div class="row">
+    <h1>Listado de Medio de Pago</h1>
+</div>
+
+<div class="row">
+    <table border="1">
+        <tr><td>Id</td><td>Nombre</td></tr>
+        {% for mp in medio_pago %}
+        <tr><td>{{mp.id_medio_pago}}</td><td>{{mp.nombre}}</td></tr>
+        {% endfor %}
+    </table>
+</div>

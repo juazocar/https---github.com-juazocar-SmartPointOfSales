@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apoyo Prueba 2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>   
+   
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <form method="post" action="" id="formulario">
+                <h1>Mantenedor de Detalle Ventas</h1>
+                <br/>
+                {% csrf_token  %}
+                <div class="form-group">
+                    {{ form.as_p }}
+                </div>
+                <input type="submit" class="btn btn-danger" id="enviar" value="Enviar">
+                <input type="reset" class="btn btn-primary" id="limpiar" value="Limpiar">
+                <div id="error" class="alert alert-danger" roles="alert"></div>
+            </form>
+            <div id="error" class="alert alert-success" roles="alert">{{mensaje}}</div>
+        </div>
+    </div>
+</body>
+</html>
